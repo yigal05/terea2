@@ -1,0 +1,12 @@
+#lang racket
+(define x (read))
+(define y (read))
+
+(define (AmbosSonPares x y )
+  (if (and (= (remainder x 2) 0) (= (remainder y 2) 0) )
+      (printf "ambos son pares")
+      (printf "uno de los dos es impar")
+   )
+  )
+
+(AmbosSonPares x y)

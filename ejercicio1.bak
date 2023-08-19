@@ -1,0 +1,14 @@
+#lang racket
+(printf "Este programa, lee un número entre uno(1) y cinco(5), e
+imprime si es primo o no.
+Salvedad: Para valores fuera de este rango, no
+garantizamos los resultados.")
+
+(define v (read))
+
+(define {ComprobarPrimo v}
+  (if (or (= v 1) (= v 4))
+      "El número no es primo"
+      "El número es primo"))
+
+(ComprobarPrimo v)

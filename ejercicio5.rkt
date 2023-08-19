@@ -1,0 +1,33 @@
+#lang racket
+(printf "Este programa leyendo por teclado la antigüedad en años, calcula el sueldo mensual que le corresponde al
+trabajador de una empresa que cobra 40.000 euros anuales, el programa
+debe realizar los cálculos en función de los siguientes criterios:
+a. Si lleva más de 10 años en la empresa se le aplica un aumento del 10%.
+b. Si lleva menos de 10 años pero más que 5 se le aplica un aumento del 7%.
+c. Si lleva menos de 5 años pero más que 3 se le aplica un aumento del 5%.
+d. Si lleva menos de 3 años se le aplica un aumento del 3%.
+
+Entre el número de años de antigüedad del trabajador:")
+
+
+(define añosDeAntiguedad (read)) ; este identificador guarda la antiguedad del trabajador
+(define sueldoBase 40000) ;este identificador guarda el sueldo base del trabajador
+
+(define {CalcularAumento v} ;esta función calcula el aumento que debe recibir el trabajador segun los años de antiguedad 
+  (if (> v 10)
+      (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.1) 12) )
+      { if (> v 5 )
+                  (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.07) 12))
+                  ;else
+                  {if (> v 3)
+                             (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.05) 12))
+                             ;else 
+                             (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.03) 12 ))
+                   };endif
+                   
+       };endif
+        
+  );endif
+ )
+
+(CalcularAumento añosDeAntiguedad) ;se llama a la funcion CalcularAumento y se le pasa añosDeAntiguedad como parametro

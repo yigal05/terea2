@@ -1,0 +1,8 @@
+#lang racket
+(printf "Este programa toma un numnero y devuelve si es mayor a 100 o no:")
+(define v (read))
+(define (MayorQueCien? v)
+  (if (> v 100)
+      (printf "Es mayor a 100")
+      (printf "No es mayor que 100") ))
+(MayorQueCien? v)

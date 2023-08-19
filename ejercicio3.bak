@@ -1,0 +1,17 @@
+#lang racket
+(printf "Este programa, lee un número entre [1 y 7] e imprime el
+día que le corresponde en la semana. Referencia:
+1=Lunes. 7=Domingo
+Salvedad: Para valores fuera de este rango, no
+garantizamos los resultados.
+Entre un número:")
+
+(define diasSemana (list "lunes" "martes" "miercoles" "jueves" "viernes" "sabado" "domingo"))
+
+(define v (read))
+
+
+(define {EmparejarDia v}
+  (printf "El día es ~a" (list-ref diasSemana (- v 1))) )
+
+(EmparejarDia v)

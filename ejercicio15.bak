@@ -1,0 +1,15 @@
+#lang racket
+
+(printf "numero de camisa:")
+(define cantidadDeCamisas (read))
+(printf "total a pagar:")
+(define totalAPagar (read))
+
+(define precioConDescuento
+  (if (>= cantidadDeCamisas 3)
+      (* totalAPagar 0.8)
+      (* totalAPagar 0.9)
+   )
+)
+
+(printf "~a" precioConDescuento )

@@ -1,0 +1,13 @@
+#lang racket
+(printf "Este programa, lee un número e imprime si es par o
+impar.
+Entre un número:")
+
+(define v (read))
+
+(define {ComprobarPar v}
+  (if (= (remainder v 2) 0)
+      "El número es par"
+      "El número no es par"))
+
+(ComprobarPar v)
