@@ -26,13 +26,13 @@ Entre el número de años de antigüedad del trabajador:")
 (define añosDeAntiguedad (read)) ; este identificador guarda la antiguedad del trabajador
 (define sueldoBase 40000) ;este identificador guarda el sueldo base del trabajador
 
-(define {CalcularAumento v} ;esta función calcula el aumento que debe recibir el trabajador segun los años de antiguedad 
-  (if (> v 10)
+(if (> añosDeAntiguedad 10)
       (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.1) 12) )
-      { if (> v 5 )
+      ;else
+      { if (> añosDeAntiguedad 5 )
                   (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.07) 12))
                   ;else
-                  {if (> v 3)
+                  {if (> añosDeAntiguedad 3)
                              (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.05) 12))
                              ;else 
                              (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.03) 12 ))
@@ -40,7 +40,4 @@ Entre el número de años de antigüedad del trabajador:")
                    
        };endif
         
-  );endif
- )
-
-(CalcularAumento añosDeAntiguedad) ;se llama a la funcion CalcularAumento y se le pasa añosDeAntiguedad como parametro
+);endif
