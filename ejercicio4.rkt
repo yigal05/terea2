@@ -1,4 +1,17 @@
 #lang racket
+#|
+-Fecha de publicación: 
+- Hora de publicación:
+- Versión de su código: 1.0
+- Autor. Ing(c) : Yigal Fabricio Rojas Acevedo
+- Nombre del lenguaje utilizado: Racket
+- Versión del lenguaje utilizado : 8.10
+- Presentado a: Doctor Ricardo Moreno Laverde
+- Universidad Tecnológica de Pereira
+- Programa de Ingeniería de Sistemas y Computación
+- Asignatura IS105 Programación I
+- El programa recibeo un numero del uno (1)al doce(12)y devuelve el mes del año al que corresponde ese numero.
+|#
 (printf "Este programa, lee un número entre [1 y 12] e imprime
 el mes que le corresponde en el año. Referencia:
 1=Enero. 12=Diciembre

@@ -1,4 +1,17 @@
 #lang racket
+#|
+-Fecha de publicación: 
+- Hora de publicación:
+- Versión de su código: 1.0ndo
+- Autor. Ing(c) : Yigal Fabricio Rojas Acevedo
+- Nombre del lenguaje utilizado: Racket
+- Versión del lenguaje utilizado : 8.10
+- Presentado a: Doctor Ricardo Moreno Laverde
+- Universidad Tecnológica de Pereira
+- Programa de Ingeniería de Sistemas y Computación
+- Asignatura IS105 Programación I
+- El programa calcula el salario semanal de un trabajador dependiendo la antiguedad de esta en la empresa
+|#
 (printf "Este programa leyendo por teclado la antigüedad en años, calcula el sueldo mensual que le corresponde al
 trabajador de una empresa que cobra 40.000 euros anuales, el programa
 debe realizar los cálculos en función de los siguientes criterios:
