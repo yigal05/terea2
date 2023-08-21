@@ -12,10 +12,10 @@
 - Asignatura IS105 Programación I
 - El programa calcula y aplica el descuento que recibirá una persona dependiendo si su compra supera o no los 100000.
 |#
-(printf "este programa calcula la cantidad que debera pagar una persona en una tienda donde si tu compra supera los 100000
-se te hara un descuento de un 20%")
+(printf "Este programa calcula la cantidad que debera pagar una persona en una tienda donde si tu compra supera los 100000
+se te hara un descuento de un 20%\n")
 
-(printf "ingrese el valor de su compra:")
+(printf "ingrese el valor de su compra:\n")
 
 (define valorDeCompra (read)) ;este identificador guarda el valor de la compra para calcular el descuento
 

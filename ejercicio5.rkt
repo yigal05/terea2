@@ -20,7 +20,7 @@ b. Si lleva menos de 10 años pero más que 5 se le aplica un aumento del 7%.
 c. Si lleva menos de 5 años pero más que 3 se le aplica un aumento del 5%.
 d. Si lleva menos de 3 años se le aplica un aumento del 3%.
 
-Entre el número de años de antigüedad del trabajador:")
+Entre el número de años de antigüedad del trabajador:\n")
 
 
 (define añosDeAntiguedad (read)) ; este identificador guarda la antiguedad del trabajador

@@ -16,11 +16,11 @@ digito.
 (printf "Este programa recibe 3 digitos y devuelve \"La multiplicacion de los 2 primeros digitos es igual al 3 digito\" \n")
 (printf "en caso de que al multiplicar el primer digito ingresado de como resultado el 3 digito de lo contrario \n")
 (printf "devolvera \"La multiplicacion de los dos primeros numero ingresados no es igual a el 3 digito\" \n")
-(printf "Ingrese el primer digito:")
+(printf "Ingrese el primer digito:\n")
 (define firstDigit (read)) ;este identificador guarda el multiplicando que se usara para comparar el resultado con thirdDigit
-(printf "Ingrese el segundo digito:")
+(printf "Ingrese el segundo digito:\n")
 (define secondDigit (read)) ;este identificador guarda el multiplicador que se usara para comparar el resultado con thirdDigit
-(printf "Ingrese el tercer digito:")
+(printf "Ingrese el tercer digito:\n")
 (define thirdDigit (read)) ;este identificador guarda el digito que se comparará con el producto de los otros dos numeros
 
 (define multFirstDigitAndSecondDigit (* firstDigit secondDigit) ) ;este identificador guarda el producto de firstDigit y secondDigit
@@ -28,4 +28,5 @@ digito.
 (define requisito ( if (= multFirstDigitAndSecondDigit thirdDigit)
                       (printf "La multiplicacion de los 2 primeros digitos es igual al 3 digito")
                       (printf "La multiplicacion de los dos primeros numero ingresados no es igual a el 3 digito")
-                  )) ;este identificador nos dice si el producto de los dos primeros digitos es igual al tercer digito
+                  )
+) ;este identificador nos dice si el producto de los dos primeros digitos es igual al tercer digito

@@ -13,10 +13,12 @@
 - El programa hace un descuento al costo de unas camisas dependiendo la cantidad de estas que se vaya a comprar
 si son 3 camisas o mas el descuento es de un 20% si la cantidad es menor el descuento es solo de un 10%.
 |#
-
-(printf "numero de camisas:")
+(printf "Este programa hace un descuento al total a pagar segun el numero de camisas
+compradas, si la cantidad de camisas compradas es mayor o igual a 3 el descuento
+es de un 20% de lo contrario le descuento es de solo 10%\n")
+(printf "numero de camisas:\n")
 (define cantidadDeCamisas (read)) ;este identificador guarda la cantidad de camisas que se ha comprado
-(printf "total a pagar:")
+(printf "total a pagar:\n")
 (define totalAPagar (read)) ;este identificador guarda el precio subtotal de las camisas es decir sin descuento
 
 (define precioConDescuento

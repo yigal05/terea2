@@ -16,9 +16,9 @@
 mayor que $7000, se le indicara al inversionista que invierta, de lo contrario se le indicara
 que no debe invertir\n")
 
-(printf "Entre el interes en %:") ; 
+(printf "Entre el interes en %:\n") ; 
 (define interes (read)) ;este identificador guarda la tasa de interes
-(printf "Entre el capital en $:")
+(printf "Entre el capital en $:\n")
 (define capital (read)) ;este identificador guarda el capital del ususario
 
 (define intereses (* capital (/ interes 100))) ;este identificador guarda el interes generado de acuerdo al capital y la tasa de interes

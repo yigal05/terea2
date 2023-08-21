@@ -13,10 +13,12 @@
 - El programa calcula la cantidad de calorias quemadas al realizar cierta actividad
 por cierta cantidad de tiempo
 |#
-(printf "Actividades
+(printf "Este programa calcula la cantidad de calorias quemadas por una persona enferma de 70 kg
+dependiendo de la actividad que haga y durante cuento tiempo")
+(printf "\nActividades:
 1) Dormir
 2) Reposar
-ingrese su actividad:")
+ingrese su actividad (1) o (2):\n")
 (define actividad (read)) ;este identificador guarda la actividad que se realizo
 (printf "ingrese el tiempo de la actividad en minutos:")
 (define minutos (read)) ;este identificador guarda durante cuanto tiempo se realizo la actividad
