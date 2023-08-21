@@ -1,0 +1,15 @@
+#lang racket
+(define kilometrosRecorridos (read))
+
+(define costoRecorrdi 
+(if (< kilometrosRecorridos 300)
+    (* kilometrosRecorridos 400000)
+    ;else
+    (if (< kilometrosRecorridos 1000)
+        (+ (* kilometrosRecorridos 400000) (* (- kilometrosRecorridos 300) 15000)  )
+        ;else
+        ( (+ (* kilometrosRecorridos 400000) (* (- kilometrosRecorridos 300) 15000) (* (- kilometrosRecorridos 1000) 10000) ))
+     )
+))
+
+(printf "el monto a pagar ")

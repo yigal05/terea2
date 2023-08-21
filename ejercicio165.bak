@@ -1,0 +1,41 @@
+#lang racket
+
+(printf "precio")
+(define precio (read))
+(printf "cantidad")
+(define cantidad (read))
+
+(define monto (* precio cantidad))
+
+(define dineroDeEmpresa
+  (if (>= monto 500000)
+      (* monto 0.55)
+      ;else
+      (* monto 0.7)
+   )
+ )
+(define dineroBanco
+  (if (>= monto 500000)
+      (* monto 0.3)
+      ;else
+      (0)
+   )
+ )
+(define creditoSolicitado
+  (if (>= monto 500000)
+      (* monto 0.15)
+      ;else
+      (* monto 0.3)
+   )
+ )
+
+(define interesCobrado
+  (if (>= monto 500000)
+      (0)
+      ;else
+      (* monto 0.3)
+   )
+ )
+
+(printf "el dinero invertido es ~a se ha necesitado prestar ~a al banco , el fabricante ha prestado ~a con un interes cobrado de ~a" monto dineroBanco creditoSolicitado )
+
