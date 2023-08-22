@@ -18,9 +18,9 @@ dependiendo de la actividad que haga y durante cuento tiempo")
 (printf "\nActividades:
 1) Dormir
 2) Reposar
-ingrese su actividad (1) o (2):\n")
+Ingrese su actividad (1) o (2):\n")
 (define actividad (read)) ;este identificador guarda la actividad que se realizo
-(printf "ingrese el tiempo de la actividad en minutos:")
+(printf "Ingrese el tiempo de la actividad en minutos:")
 (define minutos (read)) ;este identificador guarda durante cuanto tiempo se realizo la actividad
 
 (define calorias
@@ -30,7 +30,7 @@ ingrese su actividad (1) o (2):\n")
       (if (= actividad 2)
           (* minutos 1.66)
           ;else
-          (printf "ha escrito algo mal")
+          (printf "Ha escrito algo mal")
       );endif
    );endif
  ) ;este identificador guarda las calorias que se han quemado

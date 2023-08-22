@@ -13,7 +13,7 @@
 - El programa recibe.un numero y de vuelve si es mayor cien(100)o no.
 |#
 (printf "Este programa toma un numero y devuelve si es mayor a 100 o no:
-Entre un numero\n")
+Entre un número\n")
 (define numero (read)) ;este identificador contiene el numero que el usuario quiere averiguar si es mayor a 100 o no
 
 (if (> numero 100)

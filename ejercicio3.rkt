@@ -24,5 +24,5 @@ a los que se accedera con un numero que el usuario ingresará|#
 
 (define diaDeLaSemana (read)) ; este identificador guarda el numero del dia de la semana que el usuario quiere
 
-
-(printf "El día es ~a" (list-ref diasSemana (- diaDeLaSemana 1)))
+(define a (list-ref diasSemana (- diaDeLaSemana 1) )) ;este identificador se usa para acceder al elemento de la lista diasSemana que corresponde el numero ingresado por el usuario
+(printf "El día es ~a" a)

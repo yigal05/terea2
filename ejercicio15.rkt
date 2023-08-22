@@ -24,8 +24,9 @@ es de un 20% de lo contrario le descuento es de solo 10%\n")
 (define precioConDescuento
   (if (>= cantidadDeCamisas 3)
       (* totalAPagar 0.8)
+      ;else
       (* totalAPagar 0.9)
-   )
+   );endif
 );este identificador guarda el total a pagar es decir ya el precio con descuento
 
-(printf "~a" precioConDescuento )
+(printf "Se ha aplicado el descuento para a un total de ~a" precioConDescuento )

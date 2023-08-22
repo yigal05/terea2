@@ -12,10 +12,9 @@
 - Asignatura IS105 Programación I
 - El programa calcula el descuento que se aplicará a un producto dependiendo la clave que el usuario ingrese.
 |#
-(printf "Este programa te hara un decuento dependiendo de la clave que ingreses
+(printf "Este programa te hara un descuento dependiendo de la clave que ingreses
 la clave puede ser 1 o 2
-Salvedad: Para valores fuera de este rango, no
-garantizamos los resultados.\n")
+Salvedad: Para valores fuera de este rango, no garantizamos los resultados.\n")
 (printf "Ingrese su clave:\n")
 (define clave (read)) ;este identificador recibe la clave con la que se dara cierto descuento
 (printf "Ingrese precio original:\n")

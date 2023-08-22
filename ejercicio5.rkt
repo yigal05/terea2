@@ -23,16 +23,16 @@ d. Si lleva menos de 3 años se le aplica un aumento del 3%.
 Entre el número de años de antigüedad del trabajador:\n")
 
 
-(define añosDeAntiguedad (read)) ; este identificador guarda la antiguedad del trabajador
+(define años (read)) ; este identificador guarda la antiguedad del trabajador
 (define sueldoBase 40000) ;este identificador guarda el sueldo base del trabajador
 
-(if (> añosDeAntiguedad 10)
+(if (> años 10)
       (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.1) 12) )
       ;else
-      { if (> añosDeAntiguedad 5 )
+      { if (> años 5 )
                   (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.07) 12))
                   ;else
-                  {if (> añosDeAntiguedad 3)
+                  {if (> años 3)
                              (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.05) 12))
                              ;else 
                              (printf "El sueldo mensual es de ~a euros" (/ (* sueldoBase 1.03) 12 ))

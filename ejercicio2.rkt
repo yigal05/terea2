@@ -21,5 +21,5 @@ Entre un número:\n")
 (if (= (remainder numero 2) 0)
       "El número es par"
       ;else
-      "El número no es par"
+      "El número es impar"
 );endif

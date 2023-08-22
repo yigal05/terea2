@@ -24,4 +24,5 @@ del año a los que se accedera con un numero que el usuario ingresará|#
 
 (define mesDelaño (read)) ; este identificador guarda el numero del mes del año que el usuario quiere
 
-(printf "El mes es ~a" (list-ref mesesDelAño (- mesDelaño 1)))
+(define a (list-ref mesesDelAño (- mesDelaño 1)) ) ;este identificador se usa para guardar el elemento de mesesDelAño al que corresponde mesDelAño
+(printf "El mes es ~a" a )
