@@ -1,16 +1,29 @@
 #lang racket
-(printf "Este programa calcalula el salario semanal de un trabajador dependiendo de las siguientes condiciones")
-(printf "- Si trabaja 40 horas o menos se le paga $16 por hora
+#|
+-Fecha de publicación: 22/08/2023
+- Hora de publicación: 4:15
+- Versión de su código: 1.0
+- Autor. Ing(c) : Yigal Fabricio Rojas Acevedo
+- Nombre del lenguaje utilizado: Racket
+- Versión del lenguaje utilizado : 8.10
+- Presentado a: Doctor Ricardo Moreno Laverde
+- Universidad Tecnológica de Pereira
+- Programa de Ingeniería de Sistemas y Computación
+- Asignatura IS105 Programación I
+- Este programa calcalula el salario semanal de un trabajador dependiendo si trabajo mas de 40 horas o no.
+|#
+(printf "Este programa calcula el salario semanal de un trabajador dependiendo de las siguientes condiciones")
+(printf "\n- Si trabaja 40 horas o menos se le paga $16 por hora
 - Si trabaja mas de 40 horas se le paga $16 por cada una de las primeras 40 horas y $20 por cada hora extra.")
 
-(printf "Entre las horas trabajadas durante la semana:")
-(define horasDeTrabajo (read))
+(printf "\nEntre las horas trabajadas durante la semana:")
+(define horasDeTrabajo (read)) ;este identificador guarda las horas que el trabajador trabajo esa semana
 
 (define (CalcularSalarioSemanal v)
   (if (> v 40)
       (printf "su salario semanal es ~a" (+ (* 40 16) (* (- horasDeTrabajo 40) 20) ))
       (printf "su salario semanal es ~a" (* horasDeTrabajo 16))
    )
-)
+) ;este identificador guarda el resultado del calculo para el salario semanal
 
 (CalcularSalarioSemanal horasDeTrabajo)

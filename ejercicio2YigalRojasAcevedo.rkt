@@ -1,7 +1,7 @@
 #lang racket
 #|
--Fecha de publicación: 
-- Hora de publicación:
+-Fecha de publicación: 22/08/2023
+- Hora de publicación: 2:46
 - Versión de su código: 1.0
 - Autor. Ing(c) : Yigal Fabricio Rojas Acevedo
 - Nombre del lenguaje utilizado: Racket
